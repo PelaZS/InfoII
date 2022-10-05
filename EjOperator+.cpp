@@ -7,21 +7,10 @@ class Numero{
 	
 public:
 	
-	Numero(int = 0);
-	int getN();
+	Numero(int num = 0){n = num;};
+	int getN(){return n;};
 	Numero operator+ (const Numero) const;	
-	
 };
-
-Numero::Numero(int num){
-	
-	n = num;
-}
-
-int Numero::getN(){
-	
-	return n;
-}
 
 Numero Numero::operator+ (const Numero sumando) const {
 	
